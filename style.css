@@ -22,7 +22,7 @@
 /* H O M E */
 body {
     margin: 0;
-    padding: 1;
+    padding: 0;
     height: 45vw;
     background: slategrey;
     animation: backg 5s infinite;
@@ -399,10 +399,13 @@ color: black;
     font-size: 1.5rem;
   }
 .footer {
-  position: absolute;
-  height: 20%;
+  position: fixed;
+  height: 25%;
 }
 }
+@media (min-width:320px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */
+ }
 
 
 
