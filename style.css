@@ -99,7 +99,7 @@ body {
 }
 .box p{
   text-align: justify;
-  text-align: center;
+  /* text-align: center; */
 }
 .title {
   color: slategrey;
@@ -349,7 +349,7 @@ color: black;
 
 
 @media (max-width:900px) {
-  .footer, .main, .topnav {
+  .footer, .main, .topnav, .box p {
     width:100%;
   }
 .main {
@@ -359,6 +359,8 @@ color: black;
   position: fixed;
   height: 25%;
 }
+.box p{
+  text-align: center;
 }
-
+}
 
