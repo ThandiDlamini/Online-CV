@@ -100,7 +100,7 @@ body {
   
 
 .footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -109,6 +109,7 @@ body {
     color: white;
     text-align: center;
 }
+
 
 
   
@@ -398,10 +399,7 @@ color: black;
     font-size: 1.5rem;
   }
 .footer {
-  
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  position: absolute;
   height: 20%;
 }
 }
