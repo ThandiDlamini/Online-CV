@@ -1,19 +1,4 @@
- 
-/* .home{
-    /* background-color: teal;
-    background-image: url("images/cover.jpg");
-    height: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative; */
-  /* } */ 
- /* .container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
-} */
-
+/* M E N U */
 .topnav {
     overflow: hidden;
     background-color: black;
@@ -28,25 +13,21 @@
 }
 .topnav a:hover {
     background-color: #ddd;
-    color:brown;
+    color:black;
 } 
 
 
-/* MAIN */
 
+
+/* H O M E */
 body {
     margin: 0;
     padding: 1;
     height: 45vw;
     background: slategrey;
-    /* background:url(./images/giphy.gif);
-    background-size: cover;
-    height: 100vh;
-    padding:0;
-    margin:0; */
-  }
-  
-  .main {
+    animation: backg 5s infinite;
+}
+.main {
     color: black;
     white-space: nowrap;
     position: absolute;
@@ -60,32 +41,30 @@ body {
     text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
       1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
       5px 13px 15px black;
-  }
-  
-  .main:hover {
+}
+.main:hover {
     transition: 0.3s;
     transform: scale(1.1)translate(-50%, -50%);
     text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
       1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
       1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
-  }
-  
-
-
-
-
-
-
-
-
-
-
+}
+@keyframes backg{
+    0%{
+      background-color: slategray;
+    }
+    50%{
+      background-color: teal;
+    }
+    100%{
+      background-color: #5a4ca7;
+    }
+}
 
 
 
 
 /* footer */
-
 .fa{
     padding: 9px;
     font-size: 20px;
@@ -107,11 +86,11 @@ body {
     color: white;
 }
 .fa-linkedin{
-    background: #007bb5;
+    background: #0072b1;
     color: white;
 }
 .fa-instagram {
-    background: #125688;
+    background: #3f729b;
     color: white;
 }
 .fa-github{
@@ -129,13 +108,12 @@ body {
     background-color:black;
     color: white;
     text-align: center;
-  }
+}
 
 
   
 
-  /* ABOUT  */
-
+ /* ABOUT  */
 .box{
   width: 450;
   background: black;
@@ -192,18 +170,6 @@ body {
   color: white;
 }
 
-
-
-
-@keyframes animated-border {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255,255,255,0.4);
-  }
-  100% {
-     box-shadow: 0 0 0 20px rgba(255,255,255,0);
-  }
-}
-
 #boxx {
   animation: animated-border 1.5s infinite;
   font-family: Arial;
@@ -219,6 +185,14 @@ body {
   width: 60%;
   background-color: slategrey;
 }
+@keyframes animated-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255,255,255,0.4);
+  }
+  100% {
+     box-shadow: 0 0 0 20px rgba(255,255,255,0);
+  }
+}
 #boxx h4{
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
@@ -230,19 +204,11 @@ body {
   color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.fa{
-  font-size: 24px;
-}
 
 
   
 
-
-
-
-
 /* EDUCATION */
-
 .educ{
   border-style: ridge;
   background-color: #808080;  
@@ -258,22 +224,17 @@ p{
   font-family: italic;
 }
 
-
 #table {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-
 #table td, #customers th {
   border: 1px solid #ddd;
   padding: 8px;
 }
-
 #table tr:nth-child(even){background-color: #f2f2f2;}
-
 #table tr:hover {background-color: #ddd;}
-
 #table th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -281,7 +242,6 @@ p{
   background-color: black;
   color: white;
 }
-
 #table h1{
   text-decoration: underline;
   text-align: center;
@@ -290,67 +250,59 @@ p{
 
 
 
-
-
-
-
-  /* SKILLS */
-
-  .con {
+/* SKILLS */
+.con {
     box-sizing: border-box;
     background-color: whitesmoke;
- }
- body {
+}
+body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
- }
- h1 {
+}
+h1 {
     text-align: center;
- }
- .container {
+}
+.container {
     width: 100%;
     background-color: rgb(231, 231, 231);
     border-radius: 20px;
- }
- .C, .java, .MySQL, .HTML, .CSS {
+}
+.C, .java, .MySQL, .HTML, .CSS {
     text-align: center;
     font-weight: bolder;
     padding-top: 3px;
     padding-bottom: 3px;
     color: white;
     border-radius: 20px;
- }
- .C {
-    width: 90%;
+}
+.C {
+    width: 84%;
     background-color: #4caf50;
- }
- .java {
-    width: 75%;
+}
+.java {
+    width: 76%;
     background-color: #2196f3;
- }
- .MySQL {
+}
+.MySQL {
     width: 65%;
     background-color: #f44336;
- }
- .HTML {
-    width: 80%;
+}
+.HTML {
+    width: 87%;
     background-color: #808080;
- }
- .CSS {
-  width: 75%;
+}
+.CSS {
+  width: 87%;
   background-color: greenyellow;
 }
 
 
 
 
-
 /* REFERENCE */
-
-
 .ref {
   height: 60%;
   width: 50%;
-  /* position: fixed; */
+  position: fixed;
   position: absolute;
   z-index: 1;
   top: auto;
@@ -359,20 +311,100 @@ p{
 }
 .left {
   left: 0;
-  background-color: grey;
   text-align: center;
+  animation: lside 5s infinite;
+}
+@keyframes lside{
+  0%{
+    background-color: rgb(14, 116, 119);
+  }
+  100%{
+    background-color: #5a4ca7;
+  }
 }
 .right {
   right: 0;
-  background-color: white;
   text-align: center;
+  animation: rside 5s infinite;
+}
+@keyframes rside{
+  0%{
+    background-color: whitesmoke;
+  }
+  100%{
+    background-color: #5a4ca7;
+  }
 }
 .centered {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 60%;
   transform: translate(-60%, -60%);
   text-align: center;
 }
+
+.fa{
+  padding: 9px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 15%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin{
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-github{
+background: white;
+color: black;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background-color:black;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+@media (max-width:900px) {
+  .footer, .main, .topnav {
+    width:100%;
+  }
+.main {
+    font-size: 1.5rem;
+  }
+.footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+}
+}
+
 
 
